@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+    res.send('ITE314 P2');
+  });
+
 // Route for /subject
 app.get('/subject', (req, res) => {
   res.send('ITE314');
